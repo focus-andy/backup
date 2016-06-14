@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+	<name>fs.defaultFS</name>
+	<value>hdfs://Had-Master:8020</value> 
+<!--	<value>s3n://bucket-ireland-andy</value>  -->
+</property>
+<property>
+	<name>io.file.buffer.size</name>
+	<value>131072</value>
+</property>
+<property>
+	<name>hadoop.tmp.dir</name>
+	<value>file:/tmp/hadoop/tmp</value>
+	<description>Abase for other temporary   directories.</description>
+</property>
+<property>
+	<name>hadoop.proxyuser.u0.hosts</name>
+	<value>*</value>
+</property>
+<property>
+	<name>hadoop.proxyuser.u0.groups</name>
+	<value>*</value>
+</property>
+<property>
+	<name>fs.s3.awsAccessKeyId</name>
+	<value>AKIAIZREL7CZAHNBSUUA</value>
+</property>
+<property>
+	<name>fs.s3n.awsAccessKeyId</name>
+	<value>AKIAIZREL7CZAHNBSUUA</value>
+</property>
+<property>
+	<name>fs.s3.awsSecretAccessKey</name>
+	<value>Oj5Kl9ZezNDaY+zo0N8yX4czs8ZJuhVikwSRkudU</value>
+</property>
+<property>
+	<name>fs.s3n.awsSecretAccessKey</name>
+	<value>Oj5Kl9ZezNDaY+zo0N8yX4czs8ZJuhVikwSRkudU</value>
+</property>
+<property>
+	<name>fs.s3.impl</name>
+	<value>org.apache.hadoop.fs.s3.S3FileSystem</value>
+</property>
+<property>
+	<name>fs.s3n.impl</name>
+	<value>org.apache.hadoop.fs.s3native.NativeS3FileSystem</value>
+	<description>The FileSystem for s3n: (Native S3) uris.</description>
+</property>
+</configuration>
