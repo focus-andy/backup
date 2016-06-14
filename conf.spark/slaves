@@ -1,0 +1,9 @@
+# A Spark Worker will be started on each of the machines listed below.
+Spark-Slave1
+Spark-Slave2
+Spark-Slave3
+Spark-Slave4
+Spark-Slave5
+Spark-Slave6
+Spark-Slave7
+Spark-Slave8
